@@ -26,5 +26,6 @@ RUN chgrp -R 0 /app && \
 USER 1001
 
 # Alapértelmezett futtatási parancs (cseréld a sajátodra)
+EXPOSE 5000
 CMD ["python", "app.py"]
 
