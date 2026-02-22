@@ -1,12 +1,12 @@
 # A hivatalos Python 3.12 Alpine image használata
-FROM python:3.12-alpine
+FROM docker.io/python:3.12-alpine
 
 # Munkakönyvtár beállítása
 WORKDIR /app
 
 # (Ide jöhet majd a pip install -r requirements.txt lépés)
-# COPY requirements.txt .
-# RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # A te kódod bemásolása
 COPY . /app
