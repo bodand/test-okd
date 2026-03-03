@@ -19,7 +19,6 @@ jobs:
         with:
           openshift_server_url: https://api.okd.fured.cloud.bme.hu:6443
           openshift_token: ${{ secrets.OKD_TOKEN }}
-          insecure_skip_tls_verify: true
           namespace: teszt-hello-world
       
       - name: Start Build
